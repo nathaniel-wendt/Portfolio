@@ -10,7 +10,7 @@ html {
 body {
     color: #424242;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 h1,
@@ -35,6 +35,14 @@ ul {
     margin: 0;
 }
 
+a:link {
+    color: #3991FF;
+}
+
+a:visited {
+    color: #542189;
+}
+
 header {
     Margin: 80px 0;
     background: #ececec;
@@ -48,8 +56,8 @@ header {
 }
 .title h1 {
     color: #000;
-    font-size: 2.4em;
-
+    font-size: 1.7em;
+    margin: 5px 0 10px;
 }
 
 .btn {
@@ -68,6 +76,14 @@ header {
     background: #3391FF;
     color: #fff;
 }
+
+.social-links li {
+    color: #3991FF;
+    display: inline;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
 
 
 /*** MEDIA QUERIES ***/
