@@ -36,9 +36,16 @@ ul {
 }
 
 header {
-    Margin: 80px 30px;
+    Margin: 80px 0;
+    background: #ececec;
+    padding: 100px 0;
+    transform: skew(0deg, 4deg) translateY(-120px);
 }
 
+.title {
+    margin: 0 30px;
+    transform: skew(0deg, -4deg);
+}
 .title h1 {
     color: #000;
     font-size: 2.4em;
