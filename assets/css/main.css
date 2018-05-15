@@ -43,15 +43,20 @@ a:visited {
     color: #542189;
 }
 
+p {
+    line-height: 1.7em;
+    padding-bottom: 15px;
+}
+
 header {
-    Margin: 80px 0;
+    margin: 80px 0;
     background: #ececec;
     padding: 100px 0;
-    transform: skew(0deg, 4deg) translateY(-120px);
+    transform: skew(0deg, 4deg) translateY(-130px);
 }
 
 .title {
-    margin: 0 30px;
+    padding: 0 30px;
     transform: skew(0deg, -4deg);
 }
 .title h1 {
@@ -84,6 +89,33 @@ header {
     margin-right: 10px;
 }
 
+article {
+    margin: -100px 0 0 30px;
+    width: 80%;
+}
+
+
+
+/*** FOOTER ***/
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+}
+
+.social-footer {
+    text-align: center;
+    padding: 20px 0;
+}
+.social-footer li {
+    color: #fff;
+    display: inline;
+    font-size: 2em;
+    padding: 0 10px;
+}
+
 
 
 /*** MEDIA QUERIES ***/
@@ -96,7 +128,13 @@ header {
 
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1024px) {
 
+
+.title {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 
