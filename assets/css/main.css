@@ -58,10 +58,10 @@ p {
 }
 
 header {
-    margin: 50px 0;
+    margin: 40px 0;
     background-image: url(../images/Bernhardt-Mountains.png);
     background-size: cover;
-    padding: 140px 0 90px 0;
+    padding: 150px 0 90px 0;
     transform: skew(0deg, 4deg) translateY(-130px);
 }
 
@@ -74,6 +74,8 @@ header {
     font-size: 1.7em;
     margin: 5px 0 10px;
 }
+
+/*** BUTTON
 
 .btn {
     background: white;
@@ -90,7 +92,7 @@ header {
 .btn:hover {
     background: #3391FF;
     color: #fff;
-}
+} ***/
 
 .social-links li {
     color: #3991FF;
@@ -99,7 +101,7 @@ header {
     margin-right: 10px;
 }
 
-article {
+.bio {
     margin: -100px 0 0 30px;
     width: 75%;
 }
@@ -118,10 +120,6 @@ article {
 
 .contact-footer {
     padding: 50px 0 20px 0;
-}
-
-.social-footer {
-    padding-bottom: 50px;
 }
 
 .contact-footer li {
