@@ -1,3 +1,7 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
 body,
 html {
@@ -37,10 +41,15 @@ ul {
 
 a:link {
     color: #3991FF;
+    text-decoration: none;
 }
 
 a:visited {
-    color: #542189;
+    color: #3991FF;  /* #542189; */
+}
+
+a:hover {
+    color: rgb(31, 97, 177);
 }
 
 p {
@@ -56,7 +65,7 @@ header {
 }
 
 .title {
-    padding: 0 30px;
+    margin: 0 30px;
     transform: skew(0deg, -4deg);
 }
 .title h1 {
@@ -91,7 +100,7 @@ header {
 
 article {
     margin: -100px 0 0 30px;
-    width: 80%;
+    width: 75%;
 }
 
 
@@ -99,42 +108,45 @@ article {
 /*** FOOTER ***/
 
 #footer {
+    text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #000;
 }
 
-.social-footer {
-    text-align: center;
-    padding: 20px 0;
+.contact-footer {
+    padding: 50px 0 20px 0;
 }
-.social-footer li {
-    color: #fff;
+
+.social-footer {
+    padding-bottom: 50px;
+}
+
+.contact-footer li {
+    color: #ececec;
+    font-size: .8em;
     display: inline;
-    font-size: 2em;
     padding: 0 10px;
 }
 
-
+.social-footer li {
+    display: inline;
+    font-size: 2em;
+    padding: 0 20px;
+}
 
 /*** MEDIA QUERIES ***/
 
-@media screen and (max-width: 480px) {
-
-}
-
-@media screen and (min-width: 481px) {
-
-}
-
 @media screen and (min-width: 1024px) {
 
+    .title,
+    .content {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
-.title {
-    width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-}
-}
+
 
