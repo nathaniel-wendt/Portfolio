@@ -59,7 +59,7 @@ p {
 
 header {
     margin: 80px 0;
-    background: #ececec;
+    background: url("assets/images/Bernhardt-Mountains.png") #ececec;
     padding: 100px 0;
     transform: skew(0deg, 4deg) translateY(-130px);
 }
@@ -125,7 +125,7 @@ article {
 
 .contact-footer li {
     color: #ececec;
-    font-size: .8em;
+    font-size: 0.8em;
     display: inline;
     padding: 0 10px;
 }
