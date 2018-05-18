@@ -6,48 +6,63 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 
 <body>
-    <header>
-        <div class="title">
-            <img src="assets/images/NathanielWendt-Logo-1x.png" alt="Site Logo"/>
-            <h1>Interactive Web Designer</h1>
-            <ul class="social-links">
+    <header class="header">
+        <div class="header-title">
+            <img src="assets/images/site-logo-svg.svg" alt="Site Logo" class="site-logo"/>
+            <ul class="header-social">
                 <li><a href=""><i class="fab fa-linkedin"></i></a></li>
                 <li><a href=""><i class="fab fa-github-square"></i></a></li>
                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
             </ul>
-        <!-- <button class="btn contact">CONTACT</button> -->
         </div>
     </header>
-    <main>
-        <div class="content">
-            <section class="bio">
-                <p>I’m an Iowa native who moved to Colorado in 2013 after I finally accepted that the Rocky Mountains were never coming to me. When I’m not researching Interaction Design or tinkering with JavaScript there’s a good chance you’ll find me cruising around town on my Road Bike or Sport Climbing up in Boulder Canyon.</p>
-                <p>I design and develop professional websites for Artists and Entrepreneurs who are serious about success.</p>
-            </section>
-            <section class="recent-projects">
-                <h2>RECENT PROJECTS</h2>
-            </section>
-                
-        </div>
-        <footer id="footer">
-            <ul class="contact-footer">
-                <li>655 SNOWBERRY ST., LONGMONT, CO, 80503</li>
-                <li>303-859-7526</li>
-                <li>contact@nathanielwendt.io</li>
+
+    <main class="content">
+        <article class="bio">
+            <p>I’m an Iowa native who moved to Colorado in 2013 after I finally accepted that the Rocky Mountains were never coming to me. When I’m not researching Interaction Design or tinkering with JavaScript there’s a good chance you’ll find me cruising around town on my Road Bike or Sport Climbing up in Boulder Canyon.</p>
+            <p>I design and develop professional websites for Artists and Entrepreneurs who are serious about success.</p>
+        </article>
+        <section class="recent-projects">
+            <h2 class="projects-header">RECENT PROJECTS</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="assets/images/Project1.png" alt="" class="project-img"/>
+                    <h3 class="project-title">Project 1</h3>
+                    <p class="project-description">Description of Project 1</p>
+                </div> 
+                <div class="project">
+                    <img src="assets/images/Project2.png" alt="" class="project-img"/>
+                    <h3 class="project-title">Project 2</h3>
+                    <p class="project-description">Description of Project 2</p>
+                </div>
+                <div>
+                    <img src="assets/images/Project3.png" alt="" class="project-img"/>
+                    <h3 class="project-title">Project 3</h3>
+                    <p class="project-description">Description of Project 3</p>
+                </div class="project">
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+            <ul class="footer-contact">
+                <li>303.859.7526</li>
+                <li class="footer-diamond">&#9671;</li>
+                <li>CONTACT@NATHANIELWENDT.IO</li>
+                <li class="footer-diamond">&#9671;</li>
+                <li>LONGMONT, COLORADO</li>
             </ul>
-            <ul class="social-footer">
+            <ul class="footer-social">
                 <li><a href=""><i class="fab fa-linkedin"></i></a></li>
                 <li><a href=""><i class="fab fa-github-square"></i></a></li>
                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
             </ul>
             <p class="copyright">&copy; All Rights Reserved 2018</p>
         </footer>
-    </main>
 </body>
 </html>
  
