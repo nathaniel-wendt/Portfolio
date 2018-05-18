@@ -65,6 +65,10 @@ header {
     margin: -70px 0 50px 0;
 }
 
+.bio h1 {
+    color: #3991ff;
+}
+
 .bio p {
     padding-bottom: 15px;
 }
