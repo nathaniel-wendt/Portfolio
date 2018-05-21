@@ -132,23 +132,21 @@ footer {
 /*** MEDIA QUERIES ***/
 
 @media screen and (min-width: 800px) {
-    .bio {
+    .about-me {
         width: 75%;
     }
 
-    .footer-contact li {
-        display: inline;
-        padding: 0 10px;
-        font-size: 1em;
-        letter-spacing: 1px;
+    .project {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .project {
-        display: inline-block;
+    .project img {
+        align-self: center;
+        flex: 0 0 auto;
     }
 
     .project-title {
-        float: left;
         width: 40%
     }
 
@@ -161,9 +159,15 @@ footer {
     }
 
     .project-summary {
-        float: right;
         width: 60%;
         margin: 15px 0;
+    }
+
+    .footer-contact li {
+        display: inline;
+        padding: 0 10px;
+        font-size: 1em;
+        letter-spacing: 1px;
     }
 }
 
