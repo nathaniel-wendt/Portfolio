@@ -18,16 +18,16 @@ p {
 }
 
 a:link {
-    color: #3991ff;
+    color: #1f61b1;
     text-decoration: none;
 }
 
 a:visited {
-    color: #3991ff;
+    color: #1f61b1;
 }
 
 a:hover {
-    color: #1f61b1;
+    color: #3991ff;
 }
 
 body {
@@ -105,12 +105,13 @@ header {
 footer {
     bottom: 0;
     width: 100%;
-    background-color: #000;
+    background-color: #232937;
     text-align: center;
+    padding: 50px 0 30px;
 }
 
 .footer-contact {
-    padding: 40px 0 20px 0;
+    padding-bottom: 20px;
 }
 
 .footer-contact li {
@@ -123,10 +124,15 @@ footer {
     display: none;
 }
 
+footer p {
+    color: #9c9c9c;
+    margin: 16px 0 0;
+}
+
 .footer-social li {
     display: inline;
     font-size: 2em;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 /*** MEDIA QUERIES ***/
