@@ -37,7 +37,7 @@ body {
 }
 
 header {
-    background-image: url(../images/Bernhardt-Mountains.png);
+    background-image: url(../img/Bernhardt-Mountains.png);
     background-size: cover;
     padding: 130px 0 40px;
     transform: skew(0deg, 4deg) translateY(-130px);
