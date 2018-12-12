@@ -39,12 +39,15 @@ body {
 /* header */
 
 .header {
-    background-color: #fff;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    background-color: rgba(255,255,255,0.95);
     position: fixed;
     width: 100%;
     z-index: 3;
   }
+
+.header span {
+    font-weight: bold;
+}
   
 .header ul {
     margin: 0;
@@ -56,8 +59,8 @@ body {
 
 .header li a {
     display: block;
-    padding: 20px 20px;
-    border-right: 1px solid #f4f4f4;
+    padding: 20px 30px;
+    text-align: right;
     text-decoration: none;
 }
 
@@ -68,10 +71,11 @@ body {
 
 .header .logo {
     display: block;
-    float: left;
-    font-size: 2em;
-    padding: 10px 20px;
+    font-color: black;
+    font-size: 1.5em;
+    padding: 14px 0 0 18px;
     text-decoration: none;
+    float: left;
 }
 
 /* menu */
@@ -88,7 +92,7 @@ body {
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 28px 20px;
+    padding: 28px 18px;
     position: relative;
     user-select: none;
 }
@@ -99,7 +103,7 @@ body {
     height: 2px;
     position: relative;
     transition: background .2s ease-out;
-    width: 18px;
+    width: 20px;
 }
 
 .header .menu-icon .navicon:before,
