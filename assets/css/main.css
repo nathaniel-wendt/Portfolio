@@ -37,26 +37,7 @@ body {
 }
 
 header {
-    background-image: url(../img/Bernhardt-Mountains.png);
-    background-size: cover;
-    padding: 130px 0 40px;
-    transform: skew(0deg, 4deg) translateY(-130px);
-}
-
-.site-logo {
-    max-width: 65%;
-}
-
-.header-title {
-    margin: 30px 30px;
-    transform: skew(0deg, -4deg);
-}
-
-.header-social li {
-    color: #3991ff;
-    display: inline;
-    font-size: 2em;
-    margin-right: 10px;
+   
 }
 
 .content {
