@@ -235,13 +235,14 @@ footer p {
 
 /*** MEDIA QUERIES ***/
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 780px) {
     .header {
         height: 90px;
     }
 
     .header .logo {
-        padding-top: 30px;
+        padding-top: 26px;
+        font-size: 1.8em;
     }
     
     .header li {
