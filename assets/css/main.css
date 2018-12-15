@@ -62,20 +62,24 @@ body {
     padding: 20px 30px;
     text-align: right;
     text-decoration: none;
+    color: #696969;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-    background-color: #fff;
+    color: black;
 }
 
 .header .logo {
     display: block;
-    font-color: black;
     font-size: 1.5em;
-    padding: 14px 0 0 18px;
+    padding: 15px 0px;
     text-decoration: none;
     float: left;
+}
+
+.header-title {
+    margin: 0 30px;
 }
 
 /* menu */
@@ -92,7 +96,7 @@ body {
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 28px 18px;
+    padding: 28px 12px 18px;
     position: relative;
     user-select: none;
 }
@@ -231,21 +235,23 @@ footer p {
 
 /*** MEDIA QUERIES ***/
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
     .header li {
         float: left;
-      }
-      .header li a {
-        padding: 20px 30px;
-      }
-      .header .menu {
+    }
+
+    .header li a {
+        padding: 20px 20px;
+    }
+    
+    .header .menu {
         clear: none;
         float: right;
         max-height: none;
-      }
-      .header .menu-icon {
+    }
+    .header .menu-icon {
         display: none;
-      }
+    }
     
     .about-me {
         width: 75%;
@@ -292,5 +298,9 @@ footer p {
         width: 980px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .header .logo {
+        padding: 14px 0 0 !important;
     }
 }
