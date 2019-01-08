@@ -81,6 +81,10 @@ body {
     float: left;
 }
 
+.header .logo:hover {
+    color: #696969;
+}
+
 .header-title {
     margin: 0 30px;
 }
