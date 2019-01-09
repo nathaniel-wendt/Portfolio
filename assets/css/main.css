@@ -1,6 +1,6 @@
 body {
     color: #424242;
-    font: 16px 'Montserrat', sans-serif;
+    font: 16px 'Open Sans', sans-serif;
 }
 
 ul {
@@ -11,10 +11,12 @@ ul {
 
 h1 {
     color: #3991ff;
+    font: 'Montserrat', sans-serif;
     font-weight: 500;
 }
 
 h2 {
+    font: 'Montserrat', sans-serif;
     font-size: 2.2em;
 }
 
@@ -23,12 +25,13 @@ p {
 }
 
 a:link {
-    color: #3991ff;
+    color: black;
+    font-weight: bold;
     text-decoration: none;
 }
 
 a:visited {
-    color: #1f589e;
+    color: #103a6e;
 }
 
 a:hover {
@@ -253,6 +256,7 @@ footer {
 
 .footer-social li a {
     color: #202020;
+    font-weight: normal;
 }
 
 .footer-social:hover > li {
