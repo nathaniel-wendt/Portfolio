@@ -74,9 +74,9 @@ body {
 .header .logo {
     display: block;
     color: black;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 300;
-    padding: 10px 0 0 20px;
+    padding-top: 12px;
     text-decoration: none;
     float: left;
 }
@@ -242,14 +242,14 @@ footer p {
 
 /*** MEDIA QUERIES ***/
 
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 630px) {
     .header {
         height: 90px;
     }
 
     .header .logo {
-        padding-top: 26px;
-        font-size: 1.8em;
+        padding-top: 28px;
+        font-size: 1.6em;
     }
     
     .header li {
