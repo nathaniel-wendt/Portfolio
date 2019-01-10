@@ -198,14 +198,6 @@ body {
     flex: 1;
 }
 
-.about-me {
-    margin: 100px 0 50px;
-}
-
-.about-me p {
-    padding-bottom: 15px;
-}
-
 .projects-container {
     margin-bottom: 150px;
 }
@@ -229,10 +221,6 @@ body {
 
 .project-summary {
     margin: 0;
-}
-
-.grab-coffee {
-
 }
 
 .coffee-container {
