@@ -1,5 +1,5 @@
 
-/*****  General Styling *****/
+/*****  Global Styling *****/
 
 body {
     color: #424242;
@@ -8,21 +8,6 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-}
-
-h1 {
-    font: 'Montserrat', sans-serif;
-    font-size: 2em;
-    font-weight: 500;
-}
-
-h2 {
-    font: 'Montserrat', sans-serif;
-    font-size: 1.8em;
-}
-
-p {
-    line-height: 1.8em;
 }
 
 a:link {
@@ -41,7 +26,7 @@ ul {
     padding: 0;
 }
 
-/***** Global Button *****/
+/***** Global Buttons *****/
 
 .button {
 	border-radius: 42px;
@@ -65,35 +50,7 @@ ul {
     color: white;   
 }
 
-
-.content {
-    margin: 0 30px;
-    flex: 1;
-}
-
-.hero {
-    margin: 4em auto;
-}
-
-.projects-container {
-    margin-bottom: 150px;
-}
-.project {
-    display: block;
-    margin: 60px 0;
-}
-
-.project-img {
-    width: 100%;
-}
-
-.coffee-container {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/*** Footer ***/
+/***** Global Footer *****/
 
 footer {
     bottom: 0;
@@ -121,22 +78,11 @@ footer {
     opacity: 1.0;
 }
 
-/********** MEDIA QUERIES **********/
+/***** Global Media Queries *****/
 
-@media screen and (min-width: 630px) {
-
-    h1 {
-        font-size: 2.2em;
-    }
-    
-    .hero {
-        max-width: 500px;
-        margin: 9em auto;
-    }
-
-    .coffee-container p {
-        line-height: 2.2em;
-    }
+.content {
+    margin: 0 30px;
+    flex: 1;
 }
 
 @media screen and (min-width: 1100px) {

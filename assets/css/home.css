@@ -1,0 +1,41 @@
+
+h1 {
+    font: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+h2 {
+    font: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+}
+
+p {
+    line-height: 1.8em;
+}
+
+.hero {
+    margin: 4em auto;
+}
+
+.coffee-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 630px) {
+
+    h1 {
+        font-size: 2.4em;
+    }
+    
+    .hero {
+        max-width: 600px;
+        margin: 9em auto;
+    }
+
+    .coffee-container p {
+        line-height: 2.2em;
+    }
+}
