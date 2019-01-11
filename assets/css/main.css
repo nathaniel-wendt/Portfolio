@@ -75,6 +75,7 @@ main {
     color: white;   
 }
 
+/***** Homepage Styling *****/
 
 .hero {
     margin: 4em auto;
@@ -121,6 +122,8 @@ footer {
 
 @media screen and (min-width: 630px) {
 
+    /*** Homepage Styling ***/
+    
     h1 {
         font-size: 2.4em;
         font-weight: lighter;
