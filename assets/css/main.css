@@ -5,6 +5,9 @@ body {
     color: #424242;
     font-size: 16px;
     text-align: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -23,7 +26,7 @@ h2 {
     font-size: 1.6em;
 }
 
-p {
+p, ul, ol {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.4em;
 }
@@ -116,11 +119,11 @@ p.project-role {
 
 }
 
-.project-section-label span {
+.section-label span {
     font-size: 1.5em;
 }
 
-p.project-section-label {
+p.section-label {
     font-style: italic;
     text-align: left;
     margin: 3em auto 0;
@@ -136,6 +139,75 @@ hr {
 h2.project-h2 {
     margin-top: 1.5em;
 }
+
+    /*** Survey Section ***/
+
+    .mark-h4 {
+        text-align: left;
+        margin: 3em auto 0;
+        font-weight: lighter;
+    }
+
+    mark {
+        display: inline-block;
+        font-style: italic;
+        padding: 0.3em 0.5em;
+        color: #595959;
+        background-color: #f2f2f2;
+    }
+
+    .survey-results ul {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 100%;
+		margin-bottom: 3em;
+    }
+
+    .survey-results li {
+        -moz-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        color: #595959;
+        padding: 0;
+        font-size: 0.9em;
+    }
+
+    .survey-results li i {
+        margin: 1em auto 0.3em;
+    }
+
+    .survey-results li strong {
+        display: block;
+        font-size: 2em;
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+
+    /*** End of Section Reflections ***/
+
+    .reflection-h3 {
+        margin: 3em auto 1em;
+    }
+
+    .section-reflection ol {
+        margin-left: 0.4em;
+        padding-left: 0;
+    }
+
+    .section-reflection ol li {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin: 1em auto;
+        font-style: italic;
+    }
+
+    .section-reflection ol li span {
+        font-size: 0.75em;
+    }
+
 
 /***** Global Mobile-First Footer *****/
 
