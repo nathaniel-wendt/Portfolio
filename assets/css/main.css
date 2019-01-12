@@ -33,7 +33,7 @@ hr {
     background-color: lightgrey;
 }
 
-p, ul, ol, blockquote {
+p, ul, ol, i, blockquote {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.4em;
 }
@@ -58,7 +58,7 @@ blockquote {
     border-left: 5px solid #ddd;
     background: #F8F8F8;
     padding: 1em;
-    margin: 2em;
+    margin: 2em auto;
     font-style: italic;
 }
 
@@ -70,7 +70,7 @@ img {
 	max-width: 100%;
 	display: block;
 	height: auto;
-	margin: 1em auto;
+	margin: 1.5em auto;
 }
 
 main {
@@ -79,7 +79,7 @@ main {
 }
 
 
-/***** Global Button *****/
+/***** Global Mobile-First Button *****/
 
 .button {
     background-color: white;
@@ -105,8 +105,50 @@ main {
     color: white;   
 }
 
+/***** Global Mobile-First Bottom Nav *****/
 
-/***** Homepage Specific Styling *****/
+.bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3em auto;
+    font-weight: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+/***** Global Mobile-First Footer *****/
+
+footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 3em 0 4em;
+}
+
+.footer-social li {
+    display: inline;
+    font-size: 2em;
+    padding: 0.4em;
+}
+
+.footer-social li a {
+    color: #202020;
+    font-weight: normal;
+}
+
+.footer-social:hover > li {
+    opacity: 0.5;
+}
+
+.footer-social:hover > li:hover {
+    opacity: 1.0;
+}
+
+
+/***** Homepage Mobile-First Specific Styling *****/
 
 .hero {
     margin: 4em auto;
@@ -122,7 +164,7 @@ main {
 }
 
 
-/***** Projects Specific Styling *****/
+/***** Projects Mobile-First Specific Styling *****/
 
 .project-title hr {
     width: 5em;
@@ -238,36 +280,6 @@ mark {
     .section-reflection ol li span {
         font-size: 0.8em;
     }
-
-
-
-/***** Global Mobile-First Footer *****/
-
-footer {
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    margin: 3em 0 4em;
-}
-
-.footer-social li {
-    display: inline;
-    font-size: 2em;
-    padding: 0.4em;
-}
-
-.footer-social li a {
-    color: #202020;
-    font-weight: normal;
-}
-
-.footer-social:hover > li {
-    opacity: 0.5;
-}
-
-.footer-social:hover > li:hover {
-    opacity: 1.0;
-}
 
 
 /***** Global Media Queries *****/
