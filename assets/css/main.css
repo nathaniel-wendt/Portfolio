@@ -79,7 +79,7 @@ main {
 }
 
 
-/***** Global Mobile-First Button *****/
+/***** Global Mobile-First Buttons *****/
 
 .button {
     background-color: white;
@@ -148,7 +148,7 @@ footer {
 }
 
 
-/***** Homepage Mobile-First Specific Styling *****/
+/***** Homepage Specific Mobile-First Styling *****/
 
 .hero {
     margin: 4em auto;
@@ -164,7 +164,7 @@ footer {
 }
 
 
-/***** Projects Mobile-First Specific Styling *****/
+/***** Projects Specific Mobile-First Styling *****/
 
 .project-title hr {
     width: 5em;
@@ -227,15 +227,14 @@ mark {
     margin: 0 auto;
 }
 
-    /*** Project Survey Section ***/
+    /*** Projects Mobile-First Survey Section ***/
 
     .survey-results ul {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		width: 100%;
-		margin-bottom: 3em;
+        margin-bottom: 3em;
     }
 
     .survey-results li {
@@ -244,8 +243,10 @@ mark {
         -ms-flex: 1;
         flex: 1;
         color: #595959;
-        padding: 0;
+        margin: auto 0.4em;
         font-size: 0.9em;
+        width: 16em;
+        display: inline-block;
     }
 
     .survey-results li i {
@@ -259,7 +260,7 @@ mark {
         line-height: 1.5em;
     }
 
-    /*** Project End of Section Reflections ***/
+    /*** Projects Mobile-First Reflections ***/
 
     .reflection-h3 {
         margin: 3em auto 1em;
@@ -284,9 +285,9 @@ mark {
 
 /***** Global Media Queries *****/
 
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 600px) {
 
-    /*** Homepage Specific Styling ***/
+    /*** Homepage @media 600px Specific Styling ***/
 
     h1 {
         font-size: 2.4em;
@@ -302,13 +303,31 @@ mark {
         line-height: 2.2em;
     }
 
-    /*** Projects Specific Styling ***/
+
+    /*** Projects @media 600px Specific Styling ***/
+
+    p.section-label {
+        font-size: 1.2em;
+    }
+
+    h4.project-question {
+        font-size: 1.4em;
+        margin: 1.5em auto;
+    }
+
+    h2, p, ol {
+        text-align: left;
+    }
+
+    .tools {
+        display: flex;
+        margin: 1.2em auto;
+    }
 
     .tools span {
         display: inline-block;
     }
 }
-
 
 @media screen and (min-width: 1100px) {
 
