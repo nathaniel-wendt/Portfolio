@@ -330,11 +330,15 @@ mark {
 
 @media screen and (min-width: 800px) {
 
-    /*** Projects @media 600px Specific Styling ***/
+    /*** Projects @media 800px Specific Styling ***/
 
     h1.project-h1 {
         font-size: 3em;
         margin-top: 2em;
+    }
+
+    p.project-role {
+        font-size: 1.2em;
     }
 
     p:not(.section-label):not(.introduction-p):not(.hidden) {
@@ -356,9 +360,14 @@ mark {
         margin-bottom: 3.5em;
     }
     
-    h2, h4, .tools {
+    h2, .tools {
         max-width: 800px;
         margin: auto auto;
+    }
+
+    h4.descriptive-mark {
+        max-width: 850px;
+
     }
 
     h3.reflection-h3 {
