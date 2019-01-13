@@ -166,7 +166,7 @@ footer {
 
 /***** Projects Specific Mobile-First Styling *****/
 
-.project-title hr {
+hr.project-title-hr {
     width: 5em;
     margin-bottom: 2em;
     border: none;
@@ -323,11 +323,11 @@ mark {
         margin: 1.5em auto;
     }
 
-    h2, ol {
+    .project-h2, .reflection-ol {
         text-align: left;
     }
 
-    p:not(.project-role) {
+    .project-p, .introduction-p {
         text-align: left;
     }
 
@@ -354,7 +354,7 @@ mark {
         font-size: 1.2em;
     }
 
-    p:not(.section-label):not(.introduction-p):not(.hidden) {
+    p.project-p {
         max-width: 800px;
         display: inline-block;
     }
