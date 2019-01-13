@@ -1,27 +1,41 @@
+
+/*****  Global Mobile-First Styles *****/
+
 body {
     color: #424242;
-    font: 16px 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {
-    color: #3991ff;
-    font: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-size: 2em;
+    font-weight: 100;
 }
 
 h2 {
-    font: 'Montserrat', sans-serif;
-    font-size: 2.2em;
+    font-size: 1.6em;
 }
 
-p {
-    line-height: 1.8em;
+hr {
+    margin-bottom: 0.5em;
+    border: none;
+    height: 1px;
+    background-color: lightgrey;
+}
+
+p, ul, ol, i, blockquote {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4em;
 }
 
 a:link {
@@ -30,30 +44,55 @@ a:link {
     text-decoration: none;
 }
 
-a:visited {
-    color: #103a6e;
-}
-
 a:hover {
-    color: #1f589e;
+    color: #3991ff;
 }
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+blockquote {
+    border-left: 5px solid #ddd;
+    background: #F8F8F8;
+    padding: 1em;
+    margin: 2em auto;
+    font-style: italic;
+}
+
+blockquote span {
+    font-style: normal;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+	margin: 1.5em auto;
+}
+
+main {
+    margin: 0 30px;
+    flex: 1;
+}
+
+
+/***** Global Mobile-First Buttons *****/
 
 .button {
-	border-radius:42px;
-	border:2px solid black;
-	display:inline-block;
-	cursor:pointer;
-	color:black;
-	font-size:14px;
-	padding:14px 28px;
-    text-decoration:none;
-    margin: 60px 0;
+    background-color: white;
+	border-radius: 42px;
+	border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8em;
+    margin: 2em 0 3em;
+	padding: 1em 2.4em;
+    text-decoration: none;
 }
 
 .button:link,
@@ -66,192 +105,33 @@ body {
     color: white;   
 }
 
-/* header */
+/***** Global Mobile-First Bottom Nav *****/
 
-.header {
-    background-color: rgba(255,255,255,0.95);
-    /* position: fixed; */
-    width: 100%;
-    z-index: 3;
-  }
-  
-.header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: rgba(255,255,255,0);
+.bottom-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3em auto;
+    font-weight: normal;
 }
 
-.header li a {
-    display: block;
-    padding: 20px 30px;
-    text-align: right;
-    text-decoration: none;
-    color: #696969;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-    color: black;
-}
-
-.header span {
-    font-weight: 600;
-}
-
-.header .logo {
-    display: block;
-    color: black;
-    font-size: 1.2em;
-    font-weight: 300;
-    padding-top: 12px;
-    text-decoration: none;
-    float: left;
-}
-
-.header .logo:hover {
-    color: #696969;
-}
-
-.header-title {
-    margin: 0 30px;
-}
-
-/* menu */
-
-.header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-}
-
-/* menu icon */
-
-.header .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    padding: 24px 12px 18px;
-    position: relative;
-    user-select: none;
-}
-
-.header .menu-icon .navicon {
-    background: #333;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 20px;
-}
-
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-    background: #333;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-
-.header .menu-icon .navicon:before {
-    top: 5px;
-}
-
-.header .menu-icon .navicon:after {
-    top: -5px;
-}
-
-/* menu btn */
-
-.header .menu-btn {
+.hidden {
     display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
-    max-height: 240px;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-}
-
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-}
-
-
-.content {
-    margin: 0 30px;
-    flex: 1;
-}
-
-.about-me {
-    margin: 100px 0 50px;
-}
-
-.about-me p {
-    padding-bottom: 15px;
-}
-
-.projects-container {
-    margin-bottom: 150px;
-}
-.project {
-    display: block;
-    margin: 60px 0;
-}
-
-.project-img {
-    width: 100%;
-}
-
-.project-name {
-    margin: 5px 0;
-}
-
-.project-role {
-    margin: 0;
-    color: #9c9c9c;
-}
-
-.project-summary {
-    margin: 0;
-}
-
-.grab-coffee {
-
-}
-
-.coffee-container {
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: center;
-}
+/***** Global Mobile-First Footer *****/
 
 footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    margin: 50px 0 80px;
+    margin: 3em 0 4em;
 }
 
 .footer-social li {
     display: inline;
     font-size: 2em;
-    padding: 12px;
+    padding: 0.4em;
 }
 
 .footer-social li a {
@@ -267,74 +147,264 @@ footer {
     opacity: 1.0;
 }
 
-/*** MEDIA QUERIES ***/
 
-@media screen and (min-width: 630px) {
-    .header {
-        height: 90px;
+/***** Homepage Specific Mobile-First Styling *****/
+
+.hero {
+    margin: 4em auto;
+}
+
+.coffee-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.coffee-container p {
+    line-height: 1.6em;
+}
+
+
+/***** Projects Specific Mobile-First Styling *****/
+
+hr.project-title-hr {
+    width: 5em;
+    margin-bottom: 2em;
+    border: none;
+    height: 1px;
+    background-color: lightgrey;
+}
+
+h1.project-h1 {
+    margin-top: 1em;
+}
+
+h4.project-question {
+    margin-top: 0.8em;
+}
+
+p.project-role {
+    font-size: 0.8em;
+
+}
+
+.section-label span {
+    font-size: 1.5em;
+}
+
+p.section-label {
+    font-style: italic;
+    text-align: left;
+    margin: 3em auto 0;
+}
+
+h2.project-h2 {
+    margin-top: 1.5em;
+}
+
+hr.divider {
+    margin: 3em auto;
+}
+
+.descriptive-mark {
+    text-align: left;
+    margin: 3em auto 0;
+    font-weight: lighter;
+}
+
+mark {
+    display: inline-block;
+    font-style: italic;
+    padding: 0.3em 0.5em;
+    color: #595959;
+    background-color: #f2f2f2;
+}
+
+.tools span {
+    margin: 0 0.2em;
+    padding: 0;
+    display: inline-block;
+}
+
+.tools p {
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 0 auto;
+}
+
+    /*** Projects Mobile-First Survey Section ***/
+
+    .survey-results ul {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+        margin-bottom: 3em;
     }
 
-    .header .logo {
-        padding-top: 28px;
-        font-size: 1.6em;
+    .survey-results li {
+        -moz-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        color: #595959;
+        margin: auto 0.4em;
+        font-size: 0.9em;
+        width: 16em;
+        display: inline-block;
+    }
+
+    .survey-results li i {
+        margin: 1em auto 0.3em;
+    }
+
+    .survey-results li strong {
+        display: block;
+        font-size: 2em;
+        font-weight: 300;
+        line-height: 1.5em;
+    }
+
+    /*** Projects Mobile-First Reflections ***/
+
+    .reflection-h3 {
+        margin: 3em auto 1em;
+    }
+
+    .section-reflection ol {
+        margin-left: 0.4em;
+        padding-left: 0;
+    }
+
+    .section-reflection ol li {
+        font-size: 1.1em;
+        line-height: 1.5em;
+        margin: 1em auto;
+        font-style: italic;
+    }
+
+    .section-reflection ol li span {
+        font-size: 0.8em;
+    }
+
+
+/***** Global Media Queries *****/
+
+@media screen and (min-width: 600px) {
+
+    /*** Homepage @media 600px Specific Styling ***/
+
+    h1 {
+        font-size: 2.4em;
+        margin-top: 1.2em;
     }
     
-    .header li {
-        float: left;
-    }
-
-    .header li a {
-        padding: 35px 20px;
-    }
-    
-    .header .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-    .header .menu-icon {
-        display: none;
-    }
-    
-    .about-me {
-        width: 75%;
-    }
-
-    .project {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .project img {
-        align-self: center;
-        flex: 0 0 auto;
-    }
-
-    .project-title {
-        width: 40%
-    }
-
-    .project-name {
-        margin: 15px 0 0 30px;
-    }
-    
-    .project-role {
-        margin: 5px 0 0 30px;
-    }
-
-    .project-summary {
-        width: 60%;
-        margin: 15px 0;
+    .hero {
+        max-width: 680px;
+        margin: 9em auto;
     }
 
     .coffee-container p {
-        line-height: 2.5em;
+        line-height: 2.2em;
+    }
+
+
+    /*** Projects @media 600px Specific Styling ***/
+
+    p.project-role {
+        font-size: 1em;
+    }
+
+    p.section-label {
+        font-size: 1.2em;
+    }
+
+    h4.project-question {
+        font-size: 1.4em;
+        margin: 1.5em auto;
+    }
+
+    .project-h2, .reflection-ol {
+        text-align: left;
+    }
+
+    .project-p, .introduction-p {
+        text-align: left;
+    }
+
+    .tools {
+        display: flex;
+    }
+
+    .tools span {
+        display: inline-block;
     }
 }
 
+
+@media screen and (min-width: 800px) {
+
+    /*** Projects @media 800px Specific Styling ***/
+
+    h1.project-h1 {
+        font-size: 3em;
+        margin-top: 2em;
+    }
+
+    p.project-role {
+        font-size: 1.2em;
+    }
+
+    p.project-p {
+        max-width: 800px;
+        display: inline-block;
+    }
+
+    .introduction-p {
+        max-width: 700px;
+        display: inline-block;
+    }
+
+    #introduction h2 {
+        max-width: 700px;
+    }
+
+    h4.project-question {
+        font-size: 1.6em;
+        margin-bottom: 3.5em;
+    }
+    
+    h2, .tools {
+        max-width: 800px;
+        margin: auto auto;
+    }
+
+    h4.descriptive-mark {
+        max-width: 850px;
+
+    }
+
+    h3.reflection-h3 {
+        font-size: 1.4em;
+    }
+
+    .section-reflection ol li {
+        margin-bottom: 2.5em;
+    }
+
+    blockquote {
+        max-width: 800px;
+    }
+
+    ol {
+        max-width: 700px;
+        display: inline-block;
+    }
+}
+
+
 @media screen and (min-width: 1100px) {
-    .header-title,
-    .content {
+
+    main {
         width: 1070px;
         margin-left: auto;
         margin-right: auto;
