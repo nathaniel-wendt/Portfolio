@@ -150,16 +150,20 @@ footer {
 
 /***** Homepage Specific Mobile-First Styling *****/
 
-#hero {
-    margin: 4em auto;
-}
-
-#grab-coffee {
-    margin-top: 5em;
+#homepage-hero {
+    margin: 5em auto;
 }
 
 .projects-container {
     margin-top: 2.5em;
+}
+
+.homepage-projects-img {
+    cursor: pointer;
+}
+
+#grab-coffee {
+    margin-top: 6em;
 }
 
 .coffee-container {
@@ -301,14 +305,18 @@ mark {
 
     /*** Homepage @media 600px Specific Styling ***/
 
-    h1 {
-        font-size: 2.4em;
-        margin-top: 1.2em;
+    #homepage-hero {
+        margin: 8em auto;
     }
-    
-    .hero {
+
+    .hero-h1 {
+        font-size: 2.1em;
+        margin: 0 auto;
         max-width: 680px;
-        margin: 9em auto;
+    }
+
+    .projects-container {
+        margin-top: 3.5em;
     }
 
     .coffee-container p {
@@ -350,6 +358,24 @@ mark {
 
 
 @media screen and (min-width: 800px) {
+
+    /*** Homepage @media 800px Specific Styling ***/
+
+    #homepage-hero {
+        margin: 12em auto;
+    }
+
+    .hero-h1 {
+        font-size: 2.5em;
+    }
+
+    .projects-container {
+        margin-top: 5em;
+    }
+
+    #grab-coffee {
+        margin-top: 10em;
+    }
 
     /*** Projects @media 800px Specific Styling ***/
 
