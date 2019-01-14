@@ -150,8 +150,22 @@ footer {
 
 /***** Homepage Specific Mobile-First Styling *****/
 
-.hero {
-    margin: 4em auto;
+#homepage-hero {
+    margin: 5em auto;
+}
+
+.projects-container {
+    margin-top: 2.5em;
+}
+
+.homepage-projects-img {
+    cursor: pointer;
+    box-shadow: 10px 10px 21px -12px rgba(0,0,0,0.2);
+    border-radius: 9px;
+}
+
+#grab-coffee {
+    margin-top: 6em;
 }
 
 .coffee-container {
@@ -293,14 +307,18 @@ mark {
 
     /*** Homepage @media 600px Specific Styling ***/
 
-    h1 {
-        font-size: 2.4em;
-        margin-top: 1.2em;
+    #homepage-hero {
+        margin: 8em auto;
     }
-    
-    .hero {
+
+    .hero-h1 {
+        font-size: 2.1em;
+        margin: 0 auto;
         max-width: 680px;
-        margin: 9em auto;
+    }
+
+    .projects-container {
+        margin-top: 3.5em;
     }
 
     .coffee-container p {
@@ -342,6 +360,39 @@ mark {
 
 
 @media screen and (min-width: 800px) {
+
+    /*** Homepage @media 800px Specific Styling ***/
+
+    #homepage-hero {
+        margin: 12em auto;
+    }
+
+    .hero-h1 {
+        font-size: 3em;
+        max-width: 800px;
+    }
+
+    .projects-container {
+        margin-top: 5em;
+    }
+
+    #grab-coffee {
+        margin-top: 10em;
+    }
+
+    .coffee-container {
+        max-width: 800px;
+    }
+
+    h2.coffee-h2 {
+        font-size: 1.8em;
+    }
+
+    .coffee-container p {
+        font-size: 1.5em;
+        
+    }
+
 
     /*** Projects @media 800px Specific Styling ***/
 
